@@ -21,4 +21,6 @@ public:
 	bool listempty();
 	void ascending();
 	void descending();
+	void hapus();
+	void searchdata();
 };
