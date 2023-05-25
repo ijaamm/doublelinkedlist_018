@@ -102,6 +102,11 @@ void doublelinkedlist::ascending() {
 	if (listempty())
 		cout << "\nlist empty" << endl;
 	else {
-		cout << 
+		cout << "\nrecord in ascending order of roll number are: " << endl;
+		node* currentnode = START;
+		while (currentnode != NULL) {
+			cout << currentnode->noMhs << " " << currentnode->name << endl;
+			currentnode = currentnode->next;
+		}
 	}
 }
