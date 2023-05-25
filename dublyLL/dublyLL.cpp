@@ -61,6 +61,11 @@ void doublelinkedlist::addnode() {
 		cout << "\ndublicate roll numbers not allowed" << endl;
 		return;
 	}
-		
+	
+	newnode->next = current->next;
+	newnode->prev = current;
+	if (current->next != NULL)
+		current->next->prev = newnode;
+	current->next = newnode;
 	
 }
