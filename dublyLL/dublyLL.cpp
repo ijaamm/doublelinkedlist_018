@@ -193,8 +193,14 @@ int main() {
 				break;
 			case '6':
 				return 0;
+			default:
+				cout << "\ninvalid option" << endl;
+				break;
 
 			}
+		}
+		catch (exception& e) {
+			cout << "check for the values entered." << endl;
 		}
 	}
 }
