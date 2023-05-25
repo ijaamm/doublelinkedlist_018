@@ -93,3 +93,15 @@ bool doublelinkedlist::deletenode(int rollNo) {
 	delete current;
 	return true;
 }
+
+bool doublelinkedlist::listempty() {
+	return (START == NULL);
+
+}
+void doublelinkedlist::ascending() {
+	if (listempty())
+		cout << "\nlist empty" << endl;
+	else {
+		cout << 
+	}
+}
