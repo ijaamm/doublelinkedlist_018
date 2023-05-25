@@ -98,6 +98,7 @@ bool doublelinkedlist::listempty() {
 	return (START == NULL);
 
 }
+
 void doublelinkedlist::ascending() {
 	if (listempty())
 		cout << "\nlist empty" << endl;
@@ -140,3 +141,22 @@ void doublelinkedlist::hapus() {
 	else
 		cout << "record with roll number" << rollNo << "deleted" << endl;
 }
+
+void doublelinkedlist::searchdata() {
+	if (listempty() == true) {
+		cout << "\nlist is empty" << endl;
+	}
+	node* prev, * curr;
+	prev = curr = NULL;
+	cout << "\nenter the roll number of the student whose record you want to search: ";
+	int nim;
+	cin >> nim;
+	if (doublelinkedlist::search(nim, &prev, &curr) == false)
+		cout << "\nrecord not found" << endl;
+	else {
+		cout << "\nrecord found" << endl;
+		cout << "\nroll number: " << curr->noMhs << endl;
+		cout << "\nname : " << curr->name << endl;
+	}
+}
+
